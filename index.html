@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pablo Tomás Fernández - Portafolio Personal</title>
+
+    <!-- Enlaces a las fuentes de Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Enlace a FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos CSS personalizados -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #66C9CA;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-weight: 300;
+            font-size: 1.5em;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #66C9CA;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #333;
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+
+        .social-icons a:hover {
+            color: #66C9CA;
+        }
+
+        /* Estilos adicionales */
+        .btn-custom {
+            background-color: #66C9CA;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #57b2b3;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item p {
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para los íconos sociales */
+        .social-icons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Pablo T. Fernández</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Pablo Tomás Fernández</h1>
+            <h2>Sales Automation Specialist | Data Science</h2>
+        </div>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="https://i.postimg.cc/NLkQCjTK/1718248513610.jpg" alt="Foto de Pablo Tomás Fernández"
+                        class="profile-pic">
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Soy un Data Scientist en Formación</strong> con una fuerte pasión por el análisis de
+                        datos y el aprendizaje automático. Recientemente completé el bootcamp de Data Science en
+                        <strong>Desafío Latam</strong>, donde me especialicé en análisis de datos, desarrollo de modelos
+                        predictivos y aprendizaje automático. También completé un curso en <strong>CoderHouse</strong>,
+                        destacándome entre los <strong>Top 10 estudiantes</strong>, lo que refleja mi dedicación y
+                        compromiso para dominar las habilidades avanzadas en ciencia de datos.
+                    </p>
+
+                    <p>En mi rol como <strong>Sales Automation Specialist en Regrow</strong>, optimizo herramientas como
+                        <strong>Linked Helper</strong>, <strong>Zapier</strong> y <strong>Looker Studio</strong> para
+                        automatizar e integrar procesos de ventas B2B. Mi enfoque es mejorar la eficiencia de los
+                        procesos comerciales, asegurando que estén alineados con los objetivos estratégicos de cada
+                        cliente.
+                    </p>
+
+
+                    <p><strong>¿Qué busco?</strong> Estoy en busca de oportunidades para contribuir a proyectos
+                        innovadores en Data Science y desarrollo en Python.</p>
+
+                    <p><strong>Conectemos:</strong> Si estás interesado en hablar sobre proyectos de Data Science, o
+                        simplemente para establecer una conexión, <a href="#contacto">¡no dudes en contactarme!</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section id="habilidades" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Machine Learning</li>
+                        <li>Inteligencia Artificial</li>
+                        <li>Excel Avanzado</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Scikit-learn</li>
+                        <li>Flask & Django</li>
+                        <li>TensorFlow</li>
+                        <li>Tableau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://i.postimg.cc/mhg6WHS9/Captura-de-pantalla-2024-11-12-135644.png"
+                            class="card-img-top" alt="Olympic Athletes Performance Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Olympic Athletes Performance Analysis</h5>
+                            <p class="card-text">Proyecto que analiza los atributos de los atletas olímpicos y su
+                                relación con el éxito en medallas. Utilizando aprendizaje automático, se predicen las
+                                probabilidades de ganar medallas según características como altura, peso y otras.</p>
+                            <p class="card-text"><strong>Tecnologías:</strong> Python, Scikit-learn, Pandas, Numpy,
+                                Seaborn, XGBoost.</p>
+                            <a href="https://github.com/TomasFerC/Proyecto_DS/tree/main/coder_2023" target="_blank"
+                                class="btn btn-custom btn-block">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://i.postimg.cc/3Wff8xLc/cinematografia-700x438-copia.jpg" class="card-img-top"
+                            alt="Flask CRUD App">
+                        <div class="card-body">
+                            <h5 class="card-title">BLOG CODERHOUSE</h5>
+                            <p class="card-text">Un blog dedicado a películas y series, que incluye funcionalidades
+                                completas de CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar contenidos.
+                            </p>
+                            <p class="card-text"><strong>Tecnologías:</strong> Django, HTML, CSS.</p>
+                            <a href="https://github.com/TomasFerC/BLOG_CODERHOUSE" target="_blank"
+                                class="btn btn-custom btn-block">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="https://i.postimg.cc/PvJ6Wgqy/1880637461-1720290600.jpg" class="card-img-top"
+                            alt="Flask CRUD App">
+                        <div class="card-body">
+                            <h5 class="card-title">Inmobiliaria Imperial</h5>
+                            <p class="card-text">Una página inmobiliaria que incluye funcionalidades completas de CRUD (Crear, Leer, Actualizar, Eliminar) para
+                                la gestión de propiedades.</p>
+                            <p class="card-text"><strong>Tecnologías:</strong> Flask, HTML, CSS y JavaScript</p>
+                            <a href="https://github.com/TomasFerC/BlogCodoaCodo" target="_blank"
+                                class="btn btn-custom btn-block">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <!-- Regrow -->
+                <div class="timeline-item">
+                    <h4>Sales Automation Specialist | Regrow (Junio 2024 - Presente)</h4>
+                    <p>Apoyo en la automatización de procesos de ventas B2B para clientes mediante herramientas como
+                        <strong>Linked Helper</strong>, <strong>Lemlist</strong>, <strong>Hubspot</strong>,
+                        <strong>Looker Studio</strong> y <strong>Zapier</strong>.
+                    </p>
+                </div>
+                <!-- Maverix -->
+                <div class="timeline-item">
+                    <h4>Team Leader | Maverix (Abril 2019 - Junio 2024)</h4>
+                    <p>Liderazgo de un equipo de más de 7 personas, gestión de cobranzas y relaciones con clientes.
+                        Coordinación de canales de comunicación masiva como <strong>WhatsApp</strong> y <strong>correo
+                            electrónico</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación y Certificaciones -->
+    <section id="educacion" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Educación y Certificaciones</h2>
+            <div class="row">
+                <!-- Educación -->
+                <div class="col-md-6">
+                    <h3>Educación</h3>
+                    <ul>
+                        <li><strong>Licenciatura de Psicología</strong> (Abandonado) - <em>Universidad Católica de
+                                Argentina</em></li>
+                    </ul>
+                </div>
+                <!-- Certificaciones -->
+                <div class="col-md-6">
+                    <h3>Certificaciones</h3>
+                    <ul>
+                        <li><strong>Bootcamp de Data Science</strong> - Desafío Latam</li>
+                        <li><strong>Data Science</strong> - Coderhouse</li>
+                        <li><strong>Python</strong> - Coderhouse</li>
+                        <li><strong>Agile Explorer</strong> - IBM</li>
+                        <li><strong>Programación Web Desde Cero</strong> - Egg</li>
+                        <li><strong>Data Analyst con Python</strong> - Desafío Latam</li>
+                        <li><strong>Data Analyst with Python</strong> - DataCamp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">¡Conectemos!</h2>
+            <p>Puedes contactarme por correo o a través de mis redes sociales:</p>
+            <div class="social-icons">
+                <a href="mailto:tomferc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/tomasferc/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/TomasFerC" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pablo Tomás Fernández. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
